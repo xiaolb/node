@@ -1,0 +1,35 @@
+html, body {
+	width: 100%;
+	font-size: 12px;
+  background: pink;
+}
+
+#form_login div, #form_register div{
+	margin-top:8px;
+}
+
+#form_register {
+	display: none;
+}
+
+#form_login span, #form_register span {
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+.btnLogin {
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 80px;
+	margin-top: 10px; 
+}
+.erroeExplain{
+	display: none;
+	margin-left: 80px;
+	color: red;
+}
+.aleardlyLogin{
+	display: none;
+}

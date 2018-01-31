@@ -1,0 +1,3 @@
+first：run 'mongod --dbpath=F:\formAdminData\db --port=27017' in mongodb;
+
+two: run "node app.js" in node project;
