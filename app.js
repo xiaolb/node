@@ -31,8 +31,9 @@ app.use('/admin', require('./routers/admin'));
 app.use('/api', require('./routers/api'));
 app.use('/', require('./routers/main'));
 
-mongoose.connect('mongodb://172.16.14.114:27017/blog', function(err) {
+mongoose.connect('mongodb://172.30.6.14:27017/blog', function(err) {
   if(err) {
+    console.log(err);
     console.log('链接失败');
   } else {
     
