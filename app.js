@@ -31,17 +31,17 @@ app.use('/admin', require('./routers/admin'));
 app.use('/api', require('./routers/api'));
 app.use('/', require('./routers/main'));
 
-// mongoose.connect('mongodb://172.30.6.14:27017/blog', function(err) {
-//   if(err) {
-//     console.log(err);
-//     console.log('链接失败');
-//   } else {
+mongoose.connect('mongodb://172.30.6.14:27017/blog', function(err) {
+  if(err) {
+    console.log(err);
+    console.log('链接失败');
+  } else {
     
-//     console.log('链接成功');
+    console.log('链接成功');
 
-//     // 监听
-//   }
+    // 监听
+  }
     app.listen(8090);
-// });
+});
 
 
