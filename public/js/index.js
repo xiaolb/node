@@ -11,6 +11,9 @@ $(function() {
     $.ajax({
       method: 'POST',
       url: 'http://120.77.144.188/api/user/register',
+      headers: {
+        Accept: "application/json; charset=utf-8"
+      },
       data:{
         username,
         password,
@@ -47,6 +50,9 @@ $(function() {
     $.ajax({
       method: 'POST',
       url: 'http://120.77.144.188/api/user/login',
+      headers: {
+        Accept: "application/json; charset=utf-8"
+      },
       data:{
         username,
         password
@@ -71,6 +77,9 @@ $(function() {
     $.ajax({
       method: 'POST',
       url: 'http://120.77.144.188/api/user/show',
+      headers: {
+        Accept: "application/json; charset=utf-8"
+      },
       data:{},
       dataType: 'json',
       success: function(result) {
