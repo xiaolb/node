@@ -10,7 +10,7 @@ $(function() {
     let confirmPassword = $('#form_register .confirmPassword').val();
     $.ajax({
       method: 'POST',
-      url: 'api/user/register',
+      url: 'http://120.77.144.188/api/user/register',
       data:{
         username,
         password,
@@ -46,7 +46,7 @@ $(function() {
     let password = $('#form_login .password').val();
     $.ajax({
       method: 'POST',
-      url: 'api/user/login',
+      url: 'http://120.77.144.188/api/user/login',
       data:{
         username,
         password
@@ -70,7 +70,7 @@ $(function() {
   function gain() {
     $.ajax({
       method: 'POST',
-      url: 'api/user/show',
+      url: 'http://120.77.144.188/api/user/show',
       data:{},
       dataType: 'json',
       success: function(result) {
