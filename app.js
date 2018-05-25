@@ -45,7 +45,7 @@ app.use('/admin', require('./routers/admin'));
 app.use('/api', require('./routers/api'));
 app.use('/', require('./routers/main'));
 
-mongoose.connect('mongodb://120.77.144.188:27017', function(err) {
+mongoose.connect('mongodb://localhost:27017/blog', function(err) {
   if(err) {
     console.log(err);
     console.log('链接失败');
